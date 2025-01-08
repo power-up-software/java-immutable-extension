@@ -11,12 +11,12 @@ ext {
 apply from: "${rootDir}/${configurationPath}/shared-gradle-files/web-model.gradle"
 
 dependencies {
-    implementation group: 'com.powerup.java-immutable-model', name: 'java-immutable-model', version: localDependencyVersions.javaImmutableModelVersion
+    implementation group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model', version: dependencyVersions.powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion
     implementation group: 'org.apache.commons', name: 'commons-collections4', version: dependencyVersions.apacheCommonsCommonsCollections4Version
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: dependencyVersions.apacheCommonsCommonsLang3Version
     implementation group: 'com.google.guava', name: 'guava', version: dependencyVersions.googleGuavaGuavaVersion
     implementation group: 'jakarta.xml.bind', name: 'jakarta.xml.bind-api', version: dependencyVersions.jakartaXmlBindJakartaXmlBindApiVersion
-    testImplementation group: 'com.powerup.java-immutable-model', name: 'java-immutable-model', version: localDependencyVersions.javaImmutableModelVersion, classifier: 'test'
+    testImplementation group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model', version: dependencyVersions.powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion, classifier: 'test'
 }
 
 xjc {
