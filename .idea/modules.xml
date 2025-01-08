@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.powerup.java-immutable-extension.iml" filepath="$PROJECT_DIR$/.idea/modules/com.powerup.java-immutable-extension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/com.powerup.java-immutable-extension.database.iml" filepath="$PROJECT_DIR$/.idea/modules/database/com.powerup.java-immutable-extension.database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/com.powerup.java-immutable-extension.database.main.iml" filepath="$PROJECT_DIR$/.idea/modules/database/com.powerup.java-immutable-extension.database.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/com.powerup.java-immutable-extension.database.test.iml" filepath="$PROJECT_DIR$/.idea/modules/database/com.powerup.java-immutable-extension.database.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/installer/com.powerup.java-immutable-extension.installer.iml" filepath="$PROJECT_DIR$/.idea/modules/installer/com.powerup.java-immutable-extension.installer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/installer/com.powerup.java-immutable-extension.installer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/installer/com.powerup.java-immutable-extension.installer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/installer/com.powerup.java-immutable-extension.installer.test.iml" filepath="$PROJECT_DIR$/.idea/modules/installer/com.powerup.java-immutable-extension.installer.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-model/com.powerup.java-immutable-extension.web-model.iml" filepath="$PROJECT_DIR$/.idea/modules/web-model/com.powerup.java-immutable-extension.web-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-model/com.powerup.java-immutable-extension.web-model.main.iml" filepath="$PROJECT_DIR$/.idea/modules/web-model/com.powerup.java-immutable-extension.web-model.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-model/com.powerup.java-immutable-extension.web-model.test.iml" filepath="$PROJECT_DIR$/.idea/modules/web-model/com.powerup.java-immutable-extension.web-model.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.powerupsoftwareengineering.java-immutable-extension.iml" filepath="$PROJECT_DIR$/.idea/modules/com.powerupsoftwareengineering.java-immutable-extension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/com.powerupsoftwareengineering.java-immutable-extension.database.iml" filepath="$PROJECT_DIR$/.idea/modules/database/com.powerupsoftwareengineering.java-immutable-extension.database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/com.powerupsoftwareengineering.java-immutable-extension.database.main.iml" filepath="$PROJECT_DIR$/.idea/modules/database/com.powerupsoftwareengineering.java-immutable-extension.database.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/com.powerupsoftwareengineering.java-immutable-extension.database.test.iml" filepath="$PROJECT_DIR$/.idea/modules/database/com.powerupsoftwareengineering.java-immutable-extension.database.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-model/com.powerupsoftwareengineering.java-immutable-extension.web-model.iml" filepath="$PROJECT_DIR$/.idea/modules/web-model/com.powerupsoftwareengineering.java-immutable-extension.web-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-model/com.powerupsoftwareengineering.java-immutable-extension.web-model.main.iml" filepath="$PROJECT_DIR$/.idea/modules/web-model/com.powerupsoftwareengineering.java-immutable-extension.web-model.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web-model/com.powerupsoftwareengineering.java-immutable-extension.web-model.test.iml" filepath="$PROJECT_DIR$/.idea/modules/web-model/com.powerupsoftwareengineering.java-immutable-extension.web-model.test.iml" />
+    </modules>
+  </component>
+</project>

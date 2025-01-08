@@ -1,0 +1,14 @@
+//file:noinspection GrUnresolvedAccess
+//file:noinspection GroovyAssignabilityCheck
+pluginManagement {
+    repositories {
+        maven {
+            url = "file://${rootProject.projectDir}/configuration/lib"
+        }
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'com.powerupsoftwareengineering.java-immutable-extension'
+
+include 'database'
+include 'web-model'

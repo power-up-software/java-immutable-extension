@@ -1,0 +1,14 @@
+ext {
+    moduleName = 'java-immutable-extension-database'
+}
+
+apply from: "${rootDir}/${configurationPath}/shared-gradle-files/database.gradle"
+
+
+dependencies {
+    implementation group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model', version: dependencyVersions.powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion
+    implementation group: 'org.apache.commons', name: 'commons-collections4', version: dependencyVersions.apacheCommonsCommonsCollections4Version
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: dependencyVersions.apacheCommonsCommonsLang3Version
+    implementation group: 'com.google.guava', name: 'guava', version: dependencyVersions.googleGuavaGuavaVersion
+    testImplementation group: 'findbugs', name: 'findbugs', version: testLibDependencies.findbugsFindbugsVersion
+}

@@ -1,0 +1,49 @@
+//file:noinspection GroovyAssignabilityCheck
+
+plugins {
+    id "com.github.bjornvester.xjc" version "1.7.0"
+}
+
+ext {
+    moduleName = 'java-immutable-extension-web-model'
+}
+
+apply from: "${rootDir}/${configurationPath}/shared-gradle-files/web-model.gradle"
+
+dependencies {
+    implementation group: 'com.powerup.java-immutable-model', name: 'java-immutable-model', version: localDependencyVersions.javaImmutableModelVersion
+    implementation group: 'org.apache.commons', name: 'commons-collections4', version: dependencyVersions.apacheCommonsCommonsCollections4Version
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: dependencyVersions.apacheCommonsCommonsLang3Version
+    implementation group: 'com.google.guava', name: 'guava', version: dependencyVersions.googleGuavaGuavaVersion
+    implementation group: 'jakarta.xml.bind', name: 'jakarta.xml.bind-api', version: dependencyVersions.jakartaXmlBindJakartaXmlBindApiVersion
+    testImplementation group: 'com.powerup.java-immutable-model', name: 'java-immutable-model', version: localDependencyVersions.javaImmutableModelVersion, classifier: 'test'
+}
+
+xjc {
+    xsdDir = file("${rootDir}/schema")
+    bindingFiles = project.files("${project.projectDir}/src/main/resources/schema/java-immutable-bindings.xjb")
+    outputJavaDir = file("${projectDir.absolutePath}/src/main/generated")
+    generateEpisode = true
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/generated'
+        }
+    }
+}
+
+copyXsd.dependsOn(extractXsd)
+compileJava.dependsOn(copyXsd)
+compileJava.dependsOn(switchToJakarta)
+//noinspection GrUnresolvedAccess
+switchToJakarta.dependsOn('xjc')
+
+sourceJar {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+
+clean {
+    delete 'src/main/generated'
+}
